@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: gray; */
+}
+/*
+body{
+  color: black;
+  background-color:silver;
+  margin-left:21px;
+  margin-right:21px;
+  
+  }
+*/
+.navbar{
+    display: flex;
+    align-items: center;
+    width:100%;
+    /* padding: 10px; */
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 60px;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.topnav .search-container {
+    float: center;
+    border: black;
+
+  }
+
+  
+
+
+  .one {
+      font-size: 20px;
+        color:#1A72D8;
+  }
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: black;
+  }
+  .topnav  {
+    float: center;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:black;
+    font-size: 17px;
+  }
+
+  .topnav .search-container button {
+    float: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar 
+  {
+    color: black;
+    background-color:black;
+    width:100%;
+  }
+  .topnav .search-container button:hover {
+    background:silver;
+  }
+  
+
+.mainbar{
+  /*
+    width: 90%;
+    height: 190px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+*/
+    width: 75%;
+    height: 190px;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+
+    transform: translate(-50%, -50%);
+    background-image: url('https://www.indiaeducation.net/imagesvr_ce/8982/iStock_000009819502Small.jpg');
+    background-size: 50% 50%;
+    box-shadow: 1px 2px 10px 5px red;
+    animation: slider 9s infinite linear;
+    
+}
+
+@keyframes slider{
+    0%{ background-image: url('https://www.indiaeducation.net/imagesvr_ce/8982/iStock_000009819502Small.jpg') }
+
+    25%{ background-image: url('https://www.thesprucepets.com/thmb/LjhdetAYKQ0WiFsV5-NjyHZ4SRQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/RobertDaly-Caiaimage-GettyImages-166273072-58a4b6a35f9b58819c02bbd7.jpg') }
+
+    45%{ background-image: url('https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1420hD.img?h=416&w=799&m=6&q=60&u=t&o=f&l=f') }
+    
+}

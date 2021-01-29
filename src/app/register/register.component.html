@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>UserRegestration</title>
+      <!-- Latest compiled and minified CSS -->
+    // <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+     <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     </head>
+<body>
+    <div class="container mt-3">
+        <h1> User Registration Form</h1>
+        <div class="col-lg-4 m-auto d-block">
+     
+		
+		<form formGroup="form" ngSubmit="register()" >
+		     <div class="form-group">
+                <label>UserId</label>
+                <input type="text" class="form-control" id="uid" formControlName="userId"/>
+				<span id="userid" class="text-danger font-weight-bold"></span>
+            </div>
+			
+            <div class="form-group">
+                <label>FirstName</label>
+                <input type="text" class="form-control" id="fname" formControlName="firstName">
+				<span id="firstname" class="text-danger font-weight-bold"></span>
+            </div>
+			
+			<div class="form-group">
+                <label>LastName</label>
+                <input type="text" class="form-control" id="lname" formControlName="lastName">
+				<span id="lastname" class="text-danger font-weight-bold"></span>
+            </div>
+			
+          
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" class="form-control" id="pno" formControlName="phone">
+				<span id="phoneno" class="text-danger font-weight-bold"></span>
+
+            </div>
+            <div class="form-group">
+                <label>Email_ID</label>
+                <input type="text" class="form-control" id="email"  formControlName="email_Id">
+				<span id="emailid" class="text-danger font-weight-bold"></span>
+
+            </div>   
+            <div class="form-group">
+                <label>Password</label>
+                <input type="text" class="form-control" id="pass" formControlName="password">
+				<span id="password" class="text-danger font-weight-bold"></span>
+
+            </div>  
+			<label for="Role">Role:</label>
+
+            <select formControlName="role" id="role">
+                <option value="user">User</option>
+                <option value="doctor">Doctor</option>
+            </select>
+             			
+			<div class="form-group">
+                <label>CreatedOn</label>
+                <input type="datetime" class="form-control" id="con"  formControlName="createdOn">
+				<span id="con" class="text-danger font-weight-bold"></span>
+
+            </div>  
+            <div>
+			<button class="btn btn-primary" type="submit" value="submit">submit</button>
+             </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+<!-- <script type ="text/javascript">
+
+     function validation()
+	 {
+	    
+	    var uid = document.getElementById('uid').value;
+	    var fname = document.getElementById('fname').value;
+		var lname = document.getElementById('lname').value;
+		var pno = document.getElementById('pno').value;
+		var email = document.getElementById('email').value;
+		var pass = document.getElementById('pass').value;
+		
+		if(uid ==""){
+		     document.getElementById('userid').innerHTML = " **please enter the userid";
+			 return false;
+		}
+		
+		if((uid.length <=4)||(pass.length >6)){
+		 document.getElementById('userid').innerHTML = " **password length should be in between 4 to 6 ";
+			 return false;
+		}
+		
+		
+		if(fname ==""){
+		     document.getElementById('firstname').innerHTML = " **please enter the first name";
+			 return false;
+		}
+		
+		if(!isNaN(fname)){
+	       document.getElementById('firstname').innerHTML = " **only characters are allowed";
+		    return false;
+		}
+	
+		
+		if(lname ==""){
+		     document.getElementById('lastname').innerHTML = " **please enter the last name";
+			 return false;
+		}
+		
+		if(!isNaN(lname)){
+	       document.getElementById('lastname').innerHTML = " **only characters are allowed";
+		    return false;
+		}
+		
+		
+		if(pno ==""){
+		     document.getElementById('phoneno').innerHTML = " **Please fill the Phone name field";
+			 return false;
+		}
+		if(isNaN(pno)){
+	    document.getElementById('phoneno').innerHTML = " **character not allowed Enter only digits";
+         return false;
+		}
+		
+		if(pno.length!=10){
+	    document.getElementById('phoneno').innerHTML = " **Phone no must be in 10 dight only";
+         return false;
+		}
+		
+		
+		if(email ==""){
+		     document.getElementById('emailid').innerHTML = " **Please enter the email id";
+			 return false;
+		
+		}
+		if(email.indexOf('@') <= 0){   
+		    document.getElementById('emailid').innerHTML = " **invalid '@' position";
+			 return false;
+		}
+		
+		if((email.charAt(email.length-4)!='.')&&(email.charAt(email.length-3)!='.')){
+		
+		document.getElementById('emailid').innerHTML = " ** invalid ' . ' position";
+			 return false;
+		
+		}
+		
+		if(pass ==""){
+		     document.getElementById('password').innerHTML = " **Please fill the password  field";
+			 return false;
+		
+		}
+		
+		if((pass.length <=4)||(pass.length >8)){
+		 document.getElementById('password').innerHTML = " **password length should be in between 4 to 8 ";
+			 return false;
+		}
+		
+	 }
+     
+</script> -->
+
